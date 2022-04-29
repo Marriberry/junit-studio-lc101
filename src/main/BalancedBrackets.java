@@ -29,7 +29,12 @@ public class BalancedBrackets {
             } else if (ch == ']') {
                 brackets--;
             }
+
+            if (brackets == -1) {
+                return false;
+            }
         }
         return brackets == 0;
     }
+
 }
